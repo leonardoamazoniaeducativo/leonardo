@@ -1,0 +1,112 @@
+<!DOCTYPE html lang="pt-br">
+<html>
+ <link rel="stylesheet" href="index.html">
+<head>
+    <title>Formulário PHP</title>
+        
+    <style>
+        
+          body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('./img/bolos2.jpg'); /* Substitua pelo caminho da sua imagem de fundo */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            position: relative; /* Necessário para posicionar elementos filhos com 'position: absolute;' */
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8); /* Adiciona uma cor de fundo semi-transparente */
+            position: relative; /* Necessário para posicionar elementos filhos com 'position: absolute;' */
+        }
+        .card-header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative; /* Necessário para posicionar elementos filhos com 'position: absolute;' */
+        }
+        .card-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 20px;
+            position: relative; /* Necessário para posicionar elementos filhos com 'position: absolute;' */
+        }
+        .card-field {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+        .card-number {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 3px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .logo {
+            width: 100px; /* Tamanho da primeira imagem */
+            height: 100px; /* Tamanho da primeira imagem */
+            margin-bottom: 10px;
+            position: absolute;
+            top: 23%; /* Alinha a partir do topo */
+            left: 50%; /* Alinha a partir da esquerda */
+            transform: translate(-50%, -50%); /* Centraliza a imagem */
+            z-index: 1; /* Para posicionar acima do texto */
+        }
+    
+        
+    </style>
+    </script>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-header">
+        
+        <h2>Cadastro</h2>
+    </div>
+
+    <div class="card-details">
+        <br>
+        <BR>
+        <br>
+        <br>
+        <br>
+        
+        <br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" class="card-field"><br>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" class="card-field"><br>
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" class="card-field">
+            <option value="selecione">selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="nao_binario">Não-Binário</option>
+        </select><br>
+         
+        </select><br>
+        <form action="./pagamentos" method="get"> 
+        <input type="submit" value="prxoima página ">
+    </div>
+</div>
+</body>
+</html>
+
+</html>
